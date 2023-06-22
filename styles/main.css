@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-link {
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #f6f6f6;
+    font-family: 'Monteserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+li {
+    padding-top: 8%;
+}
+
+.main-content {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.main-content-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+p, .justify {
+    font-size: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.main-content-section-h1 {
+    font-size: 2.25rem;
+}
+
+.div-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.div-links-title {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Monteserrat', sans-serif;
+    min-height: 50px;
+    align-items: center;
+}
+
+.link-image {
+    padding-right: 18px;
+}
+
+.links:hover {
+    background-color: #272727;
+}
+
+.image-home {
+    width: 80%;  
+    border-radius: 10%;
+    border-style: ridge;
+    border-color: #22D4FD;
+}
+
+.image-runner {
+    width: 80%;
+}
+
+.image-example {
+    max-width: 600px;
+}
+
+.footer {
+    padding: 24px;
+    color: black;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer p {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header-menu {
+        justify-content: center;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+    }
+
+    .main-content-section {
+        width: auto;
+    }
+}
+
+

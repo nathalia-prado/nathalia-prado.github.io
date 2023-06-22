@@ -1,9 +1,37 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>My blog</title>
+    <title>Welcome to my blog</title>
+    <meta charset="UTF-8">
+    <link href= "./styles/main.css" rel="stylesheet" type="text/css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+   </head>
+
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <header class="header"> 
+      <nav class="header-menu">
+        <a class="header-menu-link" href="index.html">Home</a>
+        <a class="header-menu-link" href="./blog/te-houtaewa-template.html">Te-Houtaewa-Template</a>
+      </nav>
+    </header>    
+    <main class="main-content">
+      <section class="main-content-section">
+          <h1 class="main-content-section-h1">Kia ora Taiao! (Hello World!)</h1> 
+          <p> This is the beginning of my website home page.</p>
+          <p> It will eventually contain a list of links to all my blogs. </p>        
+        <div class="div-links"> 
+          <h2 class="div-links-title">Content you may like</h2>
+          <a class="links" href="html-css.html"><img src="./assets/border.png">Margin vs Border <br> vs Padding<img src=""></a>
+          <a class="links" href=""><img src="./assets/strength.png">Identity, Values <br> & Strengths<img src=""></a>
+          <a class="links" href=""><img class="link-image" src="./assets/learn-plan.png">Learning Plan<img src=""></a>
+        </div> 
+      </section>
+      <div>
+        <img class="image-home" src="./assets/image.png" alt="Photo of Nathalia looking at the sea">
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Developed by Nathalia Prado</p>
+    </footer>  
   </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Margin vs Border vs Padding</title>
+    <meta charset="UTF-8">
+    <link href= "./styles/main.css" rel="stylesheet" type="text/css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+   </head>
+   
+   <body>
+    <header class="header"> 
+      <nav class="header-menu">
+        <a class="header-menu-link" href="index.html">Home</a>
+        <a class="header-menu-link" href="./blog/te-houtaewa-template.html">Te-Houtaewa-Template</a>
+      </nav>
+    </header>
+    
+    <div class="main-content">
+        <section class="main-content-section">
+            <h1 class="main-content-section-h1">What is the difference between Margin, Border, and Padding?</h1> 
+            <p>The best way to explain the difference between padding, margin and border is with the CSS box model as you see in the picture. Let's use the CONTENT
+                as an example which it could be a text, an image, etc. </p>
+            <li>The padding is transparent and it's right around the CONTENT. In other words, it controls the space inside an element.</li> 
+            <li>The border is the perimeter of the box that goes around the CONTENT and it can have different styles such as different color, size, be dashed or solid, etc. </li> 
+            <li>The margin is also transparent and it is outside the border, it provides space in between the CONTENT. In other words, it controls the space outside an element.</li>
+        </section>
+        <img class="image-example" src="./assets/padding-example.png" alt="Padding example image">
+    </div>
+    <div class="main-content">
+        <section class="main-content-section">
+            <h2>Practical Examples</h2> 
+            <h3>Padding</h3> 
+            <p>Adding the padding to 55px, the padding should expand to allow for 55 pixels of space between the text content and the perimeter of the box. 
+              You can also change the padding size of specific sides of the element by using the following properties: padding-right, padding-left, padding-top,
+            padding-bottom. </p>
+            <h3>Border</h3> 
+            <p>Adding the border to dashed blue 18px wide, the content box should have a border with the values set, as you see in the picture.  
+              Like padding, you can also specify the border sides of the element with the properties border-right, border-left, border-top, border-bottom.</p>
+            <h3>Margin</h3> 
+            <p>Adding the margin to 18px, the margin should expand to allow for 18 pixels around the element. 
+              Like padding and border, you can also specify the margin sides of the element with the properties margin-right, margin-left, margin-top, margin-bottom. </p>
+        </section>
+        <img class="image-example" src="./assets/code-example.png" alt="Code example image">
+    </div>
+    <footer class="footer">
+      <p>Developed by Nathalia Prado</p>
+    </footer>  
+  </body>
+</html>
