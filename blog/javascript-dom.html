@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>Javascript</title>
+    </head>
+    
+    <body>
+        <header class="header"> 
+            <nav class="header-menu">
+              <a class="header-menu-link" href="../index.html">Home</a>
+              <a class="header-menu-link" href="./te-houtaewa-template.html">Te-Houtaewa-Template</a>
+            </nav>
+        </header>      
+        <main class="main-content normal-alignment">
+            <section class="main-content-section">
+                <h1 class="main-content-section-h1">Javascript DOM</h1>
+                <h2>Javascript and its relationship to HTML and CSS</h2>
+                <p>The relationship between JavaScript, HTML and CSS is that they are the main languages used in the front-end in our application, i.e. 
+                they are used by the client side in his browser. The difference is that HTML and CSS are not programming languages. HTML is a markup 
+                language which was developed to allow sharing documents in a practical way, and then CSS came due to the increased use of HTML.
+                CSS is a style language which is used by developers, using their creativity, to give a good appearance and colours of the page. 
+                JavaScript is a programming language and is used to give action to the page. It adds movement to the webpages and allows the process and 
+                transition of sending and receiving data, creates content which updates in a dynamic and interactive way giving life to the application, 
+                which was just structured by the static HTML. Comparing each of them, we can use the example of the human body as a webpage: HTML is the 
+                skeleton made up of bones, and CSS is the skin, hair and clothes, creating the visual that we really see when we look at a person. 
+                    And the JavaScript is the muscle which gives movement to the body.</p>
+                <img id="js-image" src="../assets/skeleton.png" alt="Ekeleton image">
+                <h2>Control flow and Loops</h2>
+                <p>The sequence of statement execution within a script is determined by the control flow. Normally, the code runs from the top to the bottom of
+                the file unless it bumps into those common things like conditionals and loops that mess with the flow. Those conditionals and loops are 
+                everywhere and can make the code execution jump around, doing things out of ordinary order.
+                <p>Examples:</p>                    
+                <p>in your job, your boss asks you to make a client list to check their date of birth to give them gifts from the company. So each step you take 
+                will be the control flow. 
+                <li class="simple-li-item">Make a list of the clients</li> 
+                <li class="simple-li-item">go to each file and check</li>
+                <li class="simple-li-item">if the client was born in that month, then you write down his name and address</li>
+                <li class="simple-li-item">if it is not, then you proceed to the next one. </li>
+                <p>In the example above, we can see that there is a list of clients, and we need to iterate throughout this list to check the client's date of birth. 
+                This list iteration is called a loop, while the verification to check if it is the client's birth month, and write down his name and address if so, 
+                is the conditional. </p> 
+                <div class="div-code">
+                    <pre class="pre-code">
+                        <span class="span-comment-code">// In this example, we have a for loop that will iterate 5 times</span>
+                        <span class="span-selector-code">for </span><span class="span-var-code">(var i = 0; i < 5; i++) {</span>
+                        <span class="span-selector-code span-padding-code">console.log</span><span class="span-var-code">(</span><span class="span-string-code">&quot;Iteration: &quot;</span><span class="span-var-code">+ i);</span>
+                        <span class="span-var-code">}</span>
+                    </pre>
+                </div>
+            </section> 
+            <section class="main-content-section">
+                <h2>DOM - What is and how interact with it</h2>
+                <p>The DOM (Document Object Model) represents a document with a logical tree. In this structure, DOCUMENT is at the top as the global object, 
+                and it has as its root element the tag HTML, and all other tags come from its branches. The HTML tag, which is the parent object, has 2 
+                child objects, namely head and body. All elements that come from them are known as child, the ones above them are known as parent. For 
+                instance, the head tag is the parent of the title tag, and the body tag is the parent of the h1 tag. The DOM is neither part of the HTML 
+                nor part of the Javascript but is generated by the browser. In other words, when we load a page, the browser creates the document, and the 
+                interface and Javascript use the DOM to communicate with the HTML. This communication can be done via, e.g. a CSS class, for example,</p>
+                <div class="div-code">
+                    <pre class="pre-code">
+                        <span class="span-selector-code">document.getElementsByClassName(</span><span class="span-string-code">&quot;myClass&quot;</span><span class="span-var-code">);</span>
+                    </pre>
+                </div>
+                <p>when the Javascript is inserted in the HTML file using the script tag. Therefore, as it can be seen, the HTML can be accessed and manipulated via 
+                Javascript by using the DOM, while CSS classes can be used to query specific elements inside the HTML. 
+                We can interact with the DOM by using Javascript. For example, the code below would change the title text of a page. First, we look up 
+                the element with the class "title", and then we reassign a text to this element.</p>
+                <div class="div-code"><pre class="pre-code"><span class="span-selector-code">document.querySelector(<span class="span-string-code">&quot;title&quot;</span>).innerHTML = <span class="span-string-code">&quot;Changing title&quot;</span></span><span class="span-var-code">;</span></pre></div>
+
+                <h2>Arrays and Objects</h2>
+                <p>In JavaScript, both arrays and objects are used for storing and organizing data, but they differ in how their elements or properties are accessed.</p>
+                <h4>Accessing data from arrays</h4>
+                <p>It is possible to access arrays elements using numeric indices. The indices start from 0 for the first element and increment by 1 for each subsequent element. 
+                To access an element in an array, you use square brackets [ ] notation with the index value inside. For example:</p>
+                <div class="div-code mb-8">
+                    <pre class="pre-code">
+                        <span class="span-selector-code">var </span><span class="span-var-code">myArray = [</span><span class="span-string-code">10, 20, 30</span><span class="span-var-code">];</span>
+                        <span class="span-selector-code">console.log</span><span class="span-var-code">(myArray[</span><span class="span-string-code">0</span><span class="span-var-code">]);</span><span class="span-comment-code"> // Output: 10</span>
+                        <span class="span-selector-code">console.log</span><span class="span-var-code">(myArray[</span><span class="span-string-code">1</span><span class="span-var-code">]);</span><span class="span-comment-code"> // Output: 20</span>
+                    </pre>
+                </div>
+                <h4>Accessing data from objects</h4>
+                <p>On the other hand, objects in JavaScript are collections of key-value pairs. Each value is associated with a unique key or property name. You can access object properties using dot notation or square brackets notation [ ]. For example:</p>
+                <div class="div-code mb-8">
+                    <pre class="pre-code">
+                        <span class="span-selector-code">var </span><span class="span-var-code">person = { name: </span><span class="span-string-code">'James'</span><span class="span-var-code">, age: </span> </span><span class="span-string-code">32</span></span><span class="span-var-code">};</span> 
+                        <span class="span-selector-code">console.log</span><span class="span-var-code">(person.name);</span><span class="span-comment-code"> // Output: James</span>
+                        <span class="span-selector-code">console.log</span><span class="span-var-code">(person[</span><span class="span-string-code">'age'</span><span class="span-var-code">]);</span><span class="span-comment-code"> // Output: 32</span>
+                    </pre>
+                </div>
+            
+                <h2>Functions</h2>   
+                <p>A function is a self-contained block of code that performs a specific task or operation.
+                Inside the function, you put all the necessary steps or actions to achieve the desired outcome. These steps can involve calculations, data manipulation, 
+                or interacting with other parts of the code. You can make the function smart by adding conditions and loops to handle different situations efficiently.
+                It is helpful because it makes the code more organized, readable, reusable, and maintainable. In other words, instead of rewriting the same code repeatedly, 
+                you can simply call the function whenever you need it, which will make you code more readable, understandable, and easier to maintain. For example:</p>
+                <div class="div-code">
+                    <pre class="pre-code">
+                        <span class="span-selector-code">function </span><span class="span-var-code">myFunction(a, b) {</span>
+                        <span class="span-comment-code span-padding-code">// Function returns the product of a and b</span>
+                        <span class="span-selector-code span-padding-code">return </span><span class="span-var-code">a * b;</span></span>
+                        <span class="span-var-code">}</span>
+                    </pre>
+                </div>
+            </section>       
+        </main>
+        <footer class="footer">
+            <p>Developed by Nathalia Prado</p>
+        </footer>          
+    </body>
+</html>
