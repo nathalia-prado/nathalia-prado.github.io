@@ -86,9 +86,14 @@ p, .justify {
     padding-left: 8px;
 }
 
-.pr-12-pf-8 {
+.pr-12-pl-8 {
     padding-right: 12px;
     padding-left: 8px;
+}
+
+.pr-4-pl-15 {
+    padding-right: 4px;
+    padding-left: 15px;
 }
 
 .pr-18 {
