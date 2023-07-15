@@ -82,39 +82,17 @@ p, .justify {
     margin-bottom: 8px;
 }
 
-.pl-8 {
-    padding-left: 8px;
-}
-
-.pr-12-pl-8 {
-    padding-right: 12px;
-    padding-left: 8px;
-}
-
-.pr-4-pl-15 {
-    padding-right: 4px;
-    padding-left: 15px;
-}
-
-.pr-18 {
-    padding-right: 18px;
-}
-
-.pr-28 {
-    padding-right: 28px;
-}
-
 .links {
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid #22D4FD;
-    width: 100%;
+    width: 70%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 10.5px 0;
     text-decoration: none;
     color: #f6f6f6;
     font-family: 'Monteserrat', sans-serif;
@@ -214,7 +192,6 @@ p, .justify {
     width: 100%;
 }
 
-
 table, td, th {
     border: 1px solid;
     height: 70px;
@@ -224,6 +201,76 @@ table, td, th {
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -260px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 280px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    margin-top: 180px;
+  }
+
+.icon {
+    padding-right: 16px;
+    position: absolute;
+    right: 0px;
+}
+
+#margin {
+    top: 20px;
+    background-color: #7b1ce9;
+}
+
+#identity {
+    top: 80px;
+    background-color: #22D4FD;
+}
+
+#plan {
+    top: 140px;
+    background-color: #c333cf;
+}
+
+#ei {
+    top: 200px;
+    background-color: #7b1ce9;
+}
+
+#js {
+    top: 260px;
+    background-color: #22D4FD;
+}
+
+#neuroplasticity {
+    top: 320px;
+    background-color: #c333cf;
+}
+
+#te-whare {
+    top: 380px;
+    background-color: #7b1ce9;
+}
+
+#problem-solving {
+    top: 440px;
+    background-color: #22D4FD;
+}
+
+#reflection {
+    top: 500px;
+    background-color: #c333cf;
+}
+
+@media (min-width: 1024px) {
+    #mySidenav a:hover {
+        left: 0;
+    }
 }
 
 @media (max-width: 1200px) {
